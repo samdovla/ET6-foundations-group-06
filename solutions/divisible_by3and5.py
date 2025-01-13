@@ -35,25 +35,3 @@ def divisible_by_3and5(num):
         if i % 3 == 0 and i % 5 == 0:
             result.append(i)
     return result
-
-if __name__ == "__main__":
-    # Usage Instructions:
-    # 1. Run this script directly or import the function into another module.
-    # 2. Example of running directly:
-    #        $ python3 script_name.py
-    #        Enter your number: 20
-    #        [0, 15]
-    # 3. Import the function into your Python script:
-    #        from script_name import divisible_by_3and5
-    # 4. Call the function with a positive integer argument:
-    #        result = divisible_by3and5(50)
-    #        print(result)
-
-    try:
-        num = int(input("Enter your number: "))
-        if num < 0:
-            raise ValueError("Input must be a non-negative integer.")
-        result = divisible_by3and5(num)
-        print(result)
-    except ValueError as e:
-        print(f"Invalid input: {e}")
